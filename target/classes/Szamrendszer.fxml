@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="512.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.alkfejl.controller.SzamrendszerController">
+    <fx:define>
+        <Font fx:id="billFont" name="System Bold" size="21.0" />
+    </fx:define>
+    <children>
+        <StackPane prefHeight="500.0" prefWidth="325.0">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000e1" height="539.0" stroke="BLACK" strokeType="INSIDE" width="325.0" StackPane.alignment="CENTER" />
+                <VBox prefHeight="521.0" prefWidth="326.0">
+                    <children>
+                        <Text fx:id="littleDisplay" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="315" StackPane.alignment="CENTER">
+                            <font>
+                                <Font name="Calibri Bold" size="15.0" />
+                            </font>
+                        </Text>
+                        <Text fx:id="mainDisplay" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="315" StackPane.alignment="CENTER">
+                            <font>
+                                <Font name="Calibri Bold" size="45.0" />
+                            </font>
+                        </Text>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                            <Button onAction="#Back" prefHeight="60" prefWidth="80" text="Back" textAlignment="CENTER" />
+                            <Button onAction="#clear" prefHeight="60" prefWidth="80" text="C" textAlignment="CENTER" />
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                            <Button onAction="#pressedOperator" prefHeight="60" prefWidth="80" text="DEC" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets top="3.0" />
+                        </HBox.margin></Button>
+                            <Button onAction="#pressedOperator" prefHeight="60" prefWidth="80" text="BIN" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets top="3.0" />
+                        </HBox.margin></Button>
+                            <Button onAction="#pressedOperator" prefHeight="60" prefWidth="80" text="HEX" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets top="3.0" />
+                        </HBox.margin></Button>
+                            <Button onAction="#pressedOperator" prefHeight="60" prefWidth="80" text="OCT" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets top="3.0" />
+                        </HBox.margin></Button>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0" />
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="7" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin></Button>
+                            <Button onAction="#pressedSzam" prefHeight="60" prefWidth="62.0" text="8" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin></Button>
+                            <Button onAction="#pressedSzam" prefHeight="60" prefWidth="62.0" text="9" textAlignment="CENTER" />
+                            <Button onAction="#pressedBetu" prefHeight="60" prefWidth="62.0" text="A" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets left="4.0" />
+                        </HBox.margin></Button>
+                     <Button mnemonicParsing="false" onAction="#pressedBetu" prefHeight="80.0" prefWidth="62.0" text="B" />
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="4" textAlignment="CENTER" />
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="5" textAlignment="CENTER" />
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="6" textAlignment="CENTER" />
+                            <Button onAction="#pressedBetu" prefHeight="60" prefWidth="62.0" text="C" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets left="4.0" />
+                        </HBox.margin></Button>
+                     <Button mnemonicParsing="false" onAction="#pressedBetu" prefHeight="80.0" prefWidth="62.0" text="D" />
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                            <Button onAction="#pressedBin" prefHeight="60" prefWidth="62.0" text="1" textAlignment="CENTER" />
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="2" textAlignment="CENTER" />
+                            <Button onAction="#pressedOct" prefHeight="60" prefWidth="62.0" text="3" textAlignment="CENTER" />
+                            <Button onAction="#pressedBetu" prefHeight="60" prefWidth="62.0" text="E" textAlignment="CENTER">
+                        <HBox.margin>
+                           <Insets left="4.0" />
+                        </HBox.margin></Button>
+                     <Button mnemonicParsing="false" onAction="#pressedBetu" prefHeight="80.0" prefWidth="62.0" text="F" />
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="325.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#pressedBin" prefHeight="80.0" prefWidth="62.0" text="0">
+                           <HBox.margin>
+                              <Insets right="128.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children></HBox>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>
