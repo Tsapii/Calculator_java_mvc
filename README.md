@@ -1,1 +1,1 @@
-# Calculator_java_mvc
+Számológép Java nyelven megírva és Maven, JavaFX, JDBC-t használva.
